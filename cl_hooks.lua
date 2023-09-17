@@ -1,0 +1,1 @@
+ hook.Add("PreRender", "xuesos", function() 	if (!IsValid(xdesc.menu) and gui.IsGameUIVisible()) then 		vgui.Create("xdesc") 		if (gui.IsConsoleVisible()) then 			RunConsoleCommand("showconsole") 		end 	end end) hook.Add("RenderScreenspaceEffects", "mamuebal", function() 	if (IsValid(xdesc.menu)) then 		xdesc.menu:RenderScreenspaceEffects() 	end end)
